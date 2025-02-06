@@ -3,18 +3,22 @@ body {
     font-size: 12pt;
     background-color: blanchedalmond;
 }
+p{
+    text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: red;
 }
-
-/* Emphasized Text */
-.emphasized {
-    color: #00070d;
+.center{
+    text-align: center;
+}
+#emphasized1 {
+    color: #1886e6;
     font-weight: bold;
 }
 
-/* De-emphasized Text */
-.deemphasized {
+#deemphasized1 {
     color: #be3f3f;
 }
 footer p {
