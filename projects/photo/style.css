@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Flag-of-congo-brazzaville-01-1-300x200.png');
+    background-repeat: repeat;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+nav ul li .current {
+    font-weight: bold;
+    color: #FF5722; 
+}
+
+main {
+    padding: 20px;
+    background-image: url('flag2.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-image: url('city\ \(1\).jpg');
+}
