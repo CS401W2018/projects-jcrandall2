@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(194, 217, 236);
+}
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    background-color: rgb(167, 158, 177);
+    color:rgb(201, 121, 30);
+    text-decoration: none;
+    float: left;
+    margin-left: 50px
+}
+
+nav a:hover {
+    color:rgb(28, 34, 32);
+    background-color: rgb(141, 68, 68);
+    text-decoration: none;
+
+    
+}
+
+#wrapper {
+    width: 900px;
+    background-color: white;
+    margin: 10px auto;
+    border: thin solid black;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
