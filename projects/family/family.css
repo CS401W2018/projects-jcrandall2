@@ -34,6 +34,16 @@ main {
     padding: 20px;
 }
 
+.profile-card{
+    border: solid 1.5px black;
+}
+
+.cards{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 aside {
     width: 420px;
     background: #f4f4f4;
@@ -65,5 +75,13 @@ footer {
     article {
         width: 100%;
         margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        
     }
 }

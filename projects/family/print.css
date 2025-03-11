@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-card{
+    border: solid 1.5px black;
+}
+
+.cards{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    width: 420px;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+article {
+    width: 30%;
+    margin: 0 1.5%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
