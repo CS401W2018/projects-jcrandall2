@@ -34,8 +34,15 @@ main {
     padding: 20px;
 }
 
+
+
 .profile-card{
     border: solid 1.5px black;
+    width: 40%;
+}
+
+.profile-card article{
+    width: 85%;
 }
 
 .cards{
