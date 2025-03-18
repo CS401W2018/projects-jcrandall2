@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Form Example</title>
+</head>
+<body>  
+    <main>
+    <h2>Form Example</h2>
+    <form action="/submit" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>The form tag has an "action" attribute. What does it do?</h2>
+    <p>The "action" attribute specifies where to send the form-data when the form is submitted.</p>
+
+    <h2>The form tag has a "method" attribute. What does it do?</h2>
+    <p>The "method" attribute specifies the HTTP method (GET or POST) to use when sending form-data.</p>
+
+    <h2>What is the difference between a "POST" and a "GET"?</h2>
+    <p>GET appends form-data to the URL, while POST sends form-data in the request body. GET is less secure and has length limitations, while POST is more secure and can handle larger amounts of data.</p>
+
+    </main>
+    
+</body>     
+
+</html>
