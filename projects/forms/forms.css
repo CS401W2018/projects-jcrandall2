@@ -39,7 +39,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="phone#"],
+input[type="tel"],
 textarea[name="comments"],
 select {
     border: 2px solid #4CAF50;
