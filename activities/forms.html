@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Forms Project</h1>
+    </header>
+    <main>
+        <form action="#" method="post" id="myForm">
+            <fieldset>
+                <legend>Spill Da Beanzzz</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="phone">Phone #:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="comments">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="3"></textarea>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" id="terms" name="terms">
+                        I solemnly swear I am up to no good
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" id="terms2" name="terms2">
+                        Will you wear wigs?
+                    </label>
+                </div>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male"> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female"> Female
+                    </label>
+                </fieldset>
+
+                <div>
+                    <label for="country">Where you stay?:</label>
+                    <select id="country" name="country">
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="na">Narnia</option>
+                        <option value="mi">Middle Earth</option>
+                        <option value="fh">FableHaven</option>
+                        <option value="hw">Hogwarts</option>
+                        <option value="su">Soviet Union</option>
+                        <option value="hb">Hukilau Beach</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+        <h2>What is JavaSript? How did it get its name?</h2>
+        <p>JavaScript is a programming language. It was originally 
+            developed by Brendan Eich in 1995 under the name Mocha, 
+            later renamed to LiveScript, and finally to JavaScript. 
+            The name change was part of a marketing strategy to capitalize
+             on the popularity of Java at the time.</p>
+        <h2>What are the two ways you can run javascript?</h2>
+        <p> in a web browser (client-side) and on a server (server-side). </p>
+        <h2>what was the most popular front-end js library?</h2>
+        <p>jQuery</p>
+        <h2>what is the most popular front-end js today?</h2>
+        <p>react</p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Jonah Crandall</p>
+    </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            alert('Form submitted!'); 
+
+            const fullname = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const comments = document.getElementById('comments').value;
+            const terms = document.getElementById('terms').checked;
+            const terms2 = document.getElementById('terms2').checked;
+
+            if (!name || !email || !password) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            if (!terms) {
+                alert('You must agree to the terms.');
+                return;
+            }
+            if (!terms2) {
+                alert('You must agree to the second terms.');
+                return;
+            }
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long.');
+                return;
+            }
+            if (phone && !/^\d{10}$/.test(phone)) {
+                alert('Phone number must be 10 digits.');
+                return;
+            }
+            if (comments && comments.length > 200) {
+                alert('Comments must be less than 200 characters.');
+                return;
+            }
+            if (terms && terms2) {
+                alert('You are good to go!');
+            } else {
+                alert('Please agree to the terms.');
+            }
+
+            console.log('Full Name:', fullname);
+        });
+    </script>
+</body>
+</html>
