@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonah's Progress Form</title>
+    <link rel="stylesheet" href="jonah.css">
+    <script src="forms.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jonah's Personal Growth Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="physical.html">Physical Progress</a></li>
+                <li><a href="spiritual.html">Spiritual Progress</a></li>
+                <li><a href="intellectual.html">Intellectual Progress</a></li>
+                <li><a href="social.html">Social Progress</a></li>
+                <li><a href="random.html">Random Progress</a></li>
+                <li><a href="form.html" class="active">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="progressForm" action="#" method="post">
+            <fieldset>
+                <legend>Track Your Progress</legend>
+                
+                <div>
+                    <label for="progressType">Progress Category:</label>
+                    <select id="progressType" name="progressType" required>
+                        <option value="physical">Physical</option>
+                        <option value="spiritual">Spiritual</option>
+                        <option value="intellectual">Intellectual</option>
+                        <option value="social">Social</option>
+                        <option value="random">Random</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div>
+                    <label for="activity">Activity Description:</label>
+                    <textarea id="activity" name="activity" rows="3" placeholder="Describe your activity or progress..."></textarea>
+                </div>
+
+                <div>
+                    <label for="lessons">Lessons Learned:</label>
+                    <textarea id="lessons" name="lessons" rows="3" placeholder="What did you learn from this experience?"></textarea>
+                </div>
+
+                <div>
+                    <label for="reflection">Personal Reflection:</label>
+                    <textarea id="reflection" name="reflection" rows="3" placeholder="How do you feel about your progress?"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Jonah Crandall</p>
+    </footer>
+
+    <script>
+        document.getElementById('progressForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Process form data (this is where you'd handle the data)
+            alert('Progress form submitted successfully!');
+            // You can add more processing code here, such as sending data to a server
+        });
+    </script>
+</body>
+</html>
