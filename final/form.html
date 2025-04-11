@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonah's Progress Form</title>
     <link rel="stylesheet" href="jonah.css">
-    <script src="forms.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,7 +32,6 @@
                         <option value="physical">Physical</option>
                         <option value="spiritual">Spiritual</option>
                         <option value="intellectual">Intellectual</option>
-                        <option value="social">Social</option>
                         <option value="random">Random</option>
                     </select>
                 </div>
@@ -43,15 +41,15 @@
                 </div>
 
                 <div>
-                    <textarea id="activity" name="activity" rows="3" placeholder="Describe your activity or progress..."></textarea>
+                    <textarea id="activity" name="activity" rows="3" placeholder="Tell me 'bout the progree g"></textarea>
                 </div>
 
                 <div>
-                    <textarea id="lessons" name="lessons" rows="3" placeholder="What did you learn from this experience?"></textarea>
+                    <textarea id="lessons" name="lessons" rows="3" placeholder="What we learn gang?"></textarea>
                 </div>
 
                 <div>
-                    <textarea id="reflection" name="reflection" rows="3" placeholder="How do you feel about your progress?"></textarea>
+                    <textarea id="reflection" name="reflection" rows="3" placeholder="How you feelin 'bout it?"></textarea>
                 </div>
             </fieldset>
 
@@ -63,14 +61,8 @@
         <p>&copy; 2025 Jonah Crandall</p>
     </footer>
 
-    <script>
-        document.getElementById('progressForm').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            
-         
-            alert('Progress form submitted successfully!');
-
-        });
+    <script src="jonah.js">
+       
     </script>
 </body>
 </html>
