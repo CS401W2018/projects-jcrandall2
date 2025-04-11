@@ -12,6 +12,7 @@
         <h1>Jonah's Personal Growth Tracker</h1>
         <nav>
             <ul>
+                <li><a href="jonah.html">Jonah</a></li>
                 <li><a href="physical.html">Physical Progress</a></li>
                 <li><a href="spiritual.html">Spiritual Progress</a></li>
                 <li><a href="intellectual.html">Intellectual Progress</a></li>
@@ -28,8 +29,8 @@
                 <legend>Track Your Progress</legend>
                 
                 <div>
-                    <label for="progressType">Progress Category:</label>
                     <select id="progressType" name="progressType" required>
+                        <option value="" disabled selected>Progress Category</option>
                         <option value="physical">Physical</option>
                         <option value="spiritual">Spiritual</option>
                         <option value="intellectual">Intellectual</option>
@@ -39,22 +40,18 @@
                 </div>
 
                 <div>
-                    <label for="date">Date:</label>
                     <input type="date" id="date" name="date" required>
                 </div>
 
                 <div>
-                    <label for="activity">Activity Description:</label>
                     <textarea id="activity" name="activity" rows="3" placeholder="Describe your activity or progress..."></textarea>
                 </div>
 
                 <div>
-                    <label for="lessons">Lessons Learned:</label>
                     <textarea id="lessons" name="lessons" rows="3" placeholder="What did you learn from this experience?"></textarea>
                 </div>
 
                 <div>
-                    <label for="reflection">Personal Reflection:</label>
                     <textarea id="reflection" name="reflection" rows="3" placeholder="How do you feel about your progress?"></textarea>
                 </div>
             </fieldset>
@@ -69,11 +66,11 @@
 
     <script>
         document.getElementById('progressForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
+            event.preventDefault(); 
             
-            // Process form data (this is where you'd handle the data)
+         
             alert('Progress form submitted successfully!');
-            // You can add more processing code here, such as sending data to a server
+
         });
     </script>
 </body>
