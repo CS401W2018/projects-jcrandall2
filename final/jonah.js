@@ -26,3 +26,14 @@ document.getElementById('progressForm').addEventListener('submit', function(even
 
     document.getElementById('progressForm').reset();
 });
+const xhr = new XMLHttpRequest();
+        xhr.open("GET", "response.json", true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                document.body.innerHTML = `<h2>${response.message}</h2>`;
+            }
+        };
+        xhr.send();
+
+        form.reset();
